@@ -1,0 +1,36 @@
+{
+	"name": "@happyprime/wp-super-unlock",
+	"version": "0.0.1",
+	"description": "Unlock WordPress private APIs with version-specific acknowledgements",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "terser src/index.js -o build/index.js",
+		"lint": "eslint .",
+		"fix": "eslint . --fix",
+		"lint:package": "node ./node_modules/npm-package-json-lint/dist/cli.js ./"
+	},
+	"author": "Happy Prime",
+	"license": "GPL-2.0-or-later",
+	"peerDependencies": {
+	  "@wordpress/private-apis": "^1.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.25.2",
+		"@babel/preset-env": "^7.25.4",
+		"@happyprime/eslint-config": "^0.0.8",
+		"npm-package-json-lint": "^8.0.0",
+		"npm-package-json-lint-config-default": "^7.0.1",
+		"terser": "^5.31.6"
+	},
+	"files": [
+	  "build"
+	],
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/happyprime/wp-super-unlock.git"
+	},
+	"bugs": {
+	  "url": "https://github.com/happyprime/wp-super-unlock/issues"
+	},
+	"homepage": "https://github.com/happyprime/wp-super-unlock#readme"
+  }
