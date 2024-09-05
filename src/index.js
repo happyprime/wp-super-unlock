@@ -36,7 +36,8 @@ export function superUnlock(target, version) {
 
 	const { unlock } = __dangerousOptInToUnstableAPIsOnlyForCoreModules(
 		acknowledgement,
-		'@wordpress/edit-post'
+		// Attempt to find a package unlikely to have already registered?
+		'@wordpress/edit-widgets'
 	);
 
 	return unlock(target);
